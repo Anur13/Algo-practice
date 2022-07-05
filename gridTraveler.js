@@ -23,6 +23,7 @@ function gridTravelerTab(m, n) {
         for (let j = 0; j <= n; j++) {
             if (j < n) table[i][j + 1] += table[i][j];
             if (i < m) table[i + 1][j] += table[i][j];
+
         }
     }
     console.log(table);
